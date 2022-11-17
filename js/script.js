@@ -45,17 +45,17 @@ function showSlides() {
     slides[slideIndex - 1].classList.add("active");
     dots[slideIndex - 1].classList.add("active");
 
-    setTimeout(showSlides, 30000)
+    setTimeout(showSlides, 30000);
 }
 
 // Eventos
-[menuBtn, closeMenuBtn].forEatch((btn) => {
+[menuBtn, closeMenuBtn].forEach((btn) => {
     btn.addEventListener("click", (e) => {
         menu.classList.toggle("menu-active");
     });
 });
 
-allLinks.forEatch((link) => {
+allLinks.forEach((link) => {
     link.addEventListener("click", smoothScroll);
 });
 
