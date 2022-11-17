@@ -33,7 +33,7 @@ function smoothScroll(e) {
 function showSlides() {
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove("active");
-        dost[i.classList.romove("active");]
+        dost[i].classList.romove("active");
     }
 
     slideIndex++;
@@ -45,7 +45,7 @@ function showSlides() {
     slides[slideIndex - 1].classList.add("active");
     dots[slideIndex - 1].classList.add("active");
 
-    setTimeout(shwoSlides, 30000)
+    setTimeout(showSlides, 30000)
 }
 
 // Eventos
